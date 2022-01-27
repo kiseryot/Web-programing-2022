@@ -1,0 +1,44 @@
+.Profilename {
+    color: blue;
+    flex: 2;
+}
+
+.atas {
+   width: 50%;
+   ma
+   
+}
+.head {
+margin-right:400px ;
+}
+
+.img {
+   display: flex;
+   margin-left: 0px;
+   padding: 20px;
+   justify-content:space-between;
+   
+}
+.pace {
+   text-align: right;
+
+   justify-content: space-between;
+}
+
+.exa4 {
+   margin: 50px;
+   width: 100px;
+}
+
+.exa3 {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+
+.exa {
+   margin: 50px;
+}
+.exa2 {
+   margin: 50px;
+}

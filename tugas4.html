@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    
+    <label for="WW2">WW2</label>
+    <select id="WW2">
+        <option value="M4 Sherman">M4 Sherman</option>
+        <option value="PZ.IV">PZ.IV</option>
+        <option value="PZ.III">PZ.III</option>
+        <option value="m10 Wolverine">m10 Wolverine</option>
+        <option value="m3 General Lee">m3 General Lee</option>
+    </select>
+    <button onclick="printpicture()">Print Picture</button>
+    
+    <img id="Picture" src="">
+
+    <script>
+        
+        function printpicture() {
+            const WW2 = document.getElementById('WW2');
+            const Picture = document.getElementById('Picture');
+
+            if (WW2.value === 'M4 Sherman') {
+                Picture.src = 'https://www.nationalww2museum.org/sites/default/files/styles/wide_large/public/2017-06/m4_sherman_tank.jpg?h=b5ba7f45'
+            }
+
+            if (WW2.value === 'PZ.IV') {
+                Picture.src = 'https://cdn.britannica.com/w:690,h:388,c:crop/20/60720-050-498BC5DA/Pz-IV-German-Pz-III-tanks-1942.jpg'
+            }
+
+            if (WW2.value === 'PZ.III'){
+                Picture.src = 'https://cdn.britannica.com/w:690,h:388,c:crop/20/60720-050-498BC5DA/Pz-IV-German-Pz-III-tanks-1942.jpg'
+            }
+
+            if (WW2.value === 'm10 Wolverine'){
+                Picture.src = 'https://cdn.britannica.com/w:690,h:388,c:crop/68/135168-050-A8F9FA9F/stream-tank-destroyer-M10-Wolverine-German-World.jpg'
+            }
+
+            if (WW2.value === 'm3 General Lee'){
+                Picture.src = 'https://cdn.britannica.com/w:690,h:388,c:crop/64/147364-050-4466C731/Lee-M3-tank-training-exercise-World-War-1942.jpg'
+            }
+        }
+        
+    </script>
+</body>
+</html>

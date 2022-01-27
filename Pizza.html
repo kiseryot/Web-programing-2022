@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Pizza Order</title>
+</head>
+<body>
+    <h2>Black Goose Bistro Pizza-on-Demand</h2>
+    <p>Our 12"wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour</p>
+    <form action="https://blackgoosebistro.com/pizza.php" method="post">
+        <p>Your Information:</p>
+        <label>Name:</label>
+        <input type="text" name="customername"><br>
+        <label>Address:</label>
+        <input type="text" name="address"><br>
+        <label>Telephone Number</label>
+        <input type="number" name="telephone"><br>
+        <label>Email</label>
+        <input type="email" name="email"><br><br>
+        <label>Delivery Instruction</label>
+        <textarea maxlength="400" name="instruction"></textarea><br><br>
+        <p>Design Your Dream Pizza:</p>
+        <p>Pizza Specs</p>
+        <label>Crust (Choose One)</label><br>
+        <input type="radio" name="pizzacrust" value="classic">Classic White<br>
+        <input type="radio" name="pizzacrust" value="cheese">Cheese Stuffed Crust<br>
+        <input type="radio" name="pizzacrust" value="glutenfree">Gluten Free<br>
+        <label>Toppings (Choose As Many As You Want)</label><br>
+        <input type="checkbox" name="toppings" value="redsauce">Red Sauce<br>
+        <input type="checkbox" name="toppings" value="whitesauce">White Sauce<br>
+        <input type="checkbox" name="toppings" value="mozarella">Mozzarella<br>
+        <input type="checkbox" name="toppings" value="pepperoni">Pepperoni<br>
+        <input type="checkbox" name="toppings" value="mushroom">Mushroom<br>
+        <input type="checkbox" name="toppings" value="peppers">Peppers<br>
+        <input type="checkbox" name="toppings" value="anchovies">Anchovies<br>
+        <label>How Many Pizzas</label>
+        <input type="number" name="number" max="6"><br>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
